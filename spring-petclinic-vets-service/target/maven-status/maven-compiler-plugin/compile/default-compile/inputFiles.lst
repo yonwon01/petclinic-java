@@ -1,0 +1,8 @@
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Specialty.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/VetRepository.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/model/Vet.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/system/CacheConfig.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/web/VetResource.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/PersistenceContext.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/system/VetsProperties.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-vets-service/src/main/java/org/springframework/samples/petclinic/vets/VetsServiceApplication.java

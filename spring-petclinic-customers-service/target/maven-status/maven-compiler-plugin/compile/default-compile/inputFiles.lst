@@ -1,0 +1,11 @@
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetDetails.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/OwnerResource.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/PetType.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/PersistenceContext.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/CustomersServiceApplication.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetResource.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetRequest.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/PetRepository.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/Pet.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/OwnerRepository.java
+/Users/seowonchoi/Documents/GitHub/petclinic-java/spring-petclinic-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/Owner.java
