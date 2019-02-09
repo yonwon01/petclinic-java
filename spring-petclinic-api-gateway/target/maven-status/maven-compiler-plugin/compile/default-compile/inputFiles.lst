@@ -1,0 +1,9 @@
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/application/PetType.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/application/PetDetails.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/infrastructure/config/WebConfig.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/boundary/web/ApiGatewayController.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/application/OwnerDetails.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/application/VisitsServiceClient.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/ApiGatewayApplication.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/application/VisitDetails.java
+/Users/seowonchoi/Documents/GitHub/petclinic-api/src/main/java/org/springframework/samples/petclinic/api/application/CustomersServiceClient.java
