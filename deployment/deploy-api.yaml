@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: api-gateway
+  labels:
+    app: spring-petclinic
+spec:
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: spring-petclinic
+        tier: api-gateway
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - image: yonwon01/spring-petclinic-api-gateway:latest
+          imagePullPolicy: Always
+          name: api-gateway
+          ports:
+            - containerPort: 8080
