@@ -46,8 +46,8 @@ podTemplate(label: label,
 	  stage('Build Docker image') {
 		container('docker') {
 		  docker.withRegistry("${dockerRegistry}", 'registry-credentials') {
-			sh "docker build . -t ${image}"
-			  sh "docker push ${image}:${tag}"
+			 sh "docker build ../spring-petclinic-api-gateway/ -t ${image1}"
+			 sh "docker push ${image1}:${tag}"
 			//sh "docker tag ${image}:${tag} ${image}:latest"
 			//sh "docker push ${image}:latest"
 		  }
@@ -71,9 +71,9 @@ podTemplate(label: label,
 							  usernameVariable: 'DOCKER_HUB_USER',
 							  passwordVariable: 'DOCKER_HUB_PASSWORD']]) {
 			  
-			  sh "kubectl apply -n ${namespace} -f ${deployment}"
+			  sh "kubectl apply -n ${namespace} -f ../deployment/"
 			  sh "sleep 5"
-			  sh "kubectl apply -n ${namespace} -f ${service}"
+			  //sh "kubectl apply -n ${namespace} -f ${service}"
 		  }
 		}
 	  }
