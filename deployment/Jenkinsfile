@@ -29,6 +29,7 @@ podTemplate(label: label,
 	  def deployment = props['deployment']
 	  def service = props['service']
 	  def selector = props['selector']
+          def app = props['app']
 	  def namespace = props['namespace']
 
 	    
@@ -69,7 +70,7 @@ podTemplate(label: label,
 							  usernameVariable: 'DOCKER_HUB_USER',
 							  passwordVariable: 'DOCKER_HUB_PASSWORD']]) {
 			  
-			  sh "kubectl delete deployments -n ${namespace} --selector=app=${selector}"
+			  sh "kubectl delete deployments -n ${namespace} --selector=app=${app}"
 		  }
 		}
 	  }
