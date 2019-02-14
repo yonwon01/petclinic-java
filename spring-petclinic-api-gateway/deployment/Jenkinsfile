@@ -22,7 +22,7 @@ podTemplate(label: label,
 	  def tag = props['version']
 	  def gitSrc = props['gitSrc']
 	  def dockerRegistry = props['dockerRegistry']
-	  def image = props['image']
+	  def image1 = props['image1']
 	  def deployment = props['deployment']
 	  def service = props['service']
 	  def selector = props['selector']
@@ -46,8 +46,8 @@ podTemplate(label: label,
 	  stage('Build Docker image') {
 		container('docker') {
 		  docker.withRegistry("${dockerRegistry}", 'registry-credentials') {
-			sh "docker build . -t ${image}"
-			  sh "docker push ${image}:${tag}"
+			  sh "docker build ../spring-petclinic-api-gateway/ -t ${image1}"
+			  sh "docker push ${image1}:${tag}"
 			//sh "docker tag ${image}:${tag} ${image}:latest"
 			//sh "docker push ${image}:latest"
 		  }
