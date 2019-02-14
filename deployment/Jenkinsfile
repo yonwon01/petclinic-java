@@ -15,14 +15,17 @@ podTemplate(label: label,
 		
 	  
 	  stage('Get Source') {
-		git "https://github.com/yonwon01/petclinic-api.git"
+		git "https://github.com/yonwon01/petclinic-java.git"
 	  }
 
 	  def props = readProperties  file:'deployment/pipeline.properties'
 	  def tag = props['version']
 	  def gitSrc = props['gitSrc']
 	  def dockerRegistry = props['dockerRegistry']
-	  def image = props['image']
+	  def image1 = props['image1']
+	  def image2 = props['image2']
+          def image3 = props['image3']
+	  def image4 = props['image4']	
 	  def deployment = props['deployment']
 	  def service = props['service']
 	  def selector = props['selector']
@@ -47,7 +50,13 @@ podTemplate(label: label,
 		container('docker') {
 		  docker.withRegistry("${dockerRegistry}", 'registry-credentials') {
 			 sh "docker build ../spring-petclinic-api-gateway/ -t ${image1}"
+			 sh "docker build ../spring-petclinic-customers-service/ -t ${image2}"
+			 sh "docker build ../spring-petclinic-visits-service/ -t ${image3}"
+			 sh "docker build ../spring-petclinic-vets-service/ -t ${image4}"
 			 sh "docker push ${image1}:${tag}"
+			 sh "docker push ${image2}:${tag}"
+			 sh "docker push ${image3}:${tag}"
+			 sh "docker push ${image4}:${tag}"
 			//sh "docker tag ${image}:${tag} ${image}:latest"
 			//sh "docker push ${image}:latest"
 		  }
