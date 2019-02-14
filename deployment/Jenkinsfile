@@ -43,11 +43,11 @@ podTemplate(label: label,
 	  def namespace = props['namespace']
 
 	    
-	 /* stage('Build Maven project') {
+	  stage('Build Maven project') {
 		container('maven') {
 			sh "mvn -B clean package"
 		}
-	  }*/
+	  }
 		
 	 /* stage('Inspection Code') {
 		container('maven') {
@@ -93,7 +93,7 @@ podTemplate(label: label,
 							  passwordVariable: 'DOCKER_HUB_PASSWORD']]) {
 			  
 			  sh "kubectl apply -n ${namespace} -f ./deployment/"
-			  sh "sleep 5"
+			 
 			  //sh "kubectl apply -n ${namespace} -f ${service}"
 		  }
 		}
