@@ -33,11 +33,11 @@ podTemplate(label: label,
 	  def namespace = props['namespace']
 
 	    
-	  stage('Build Maven project') {
+	 /* stage('Build Maven project') {
 		container('maven') {
 			sh "mvn -B clean package"
 		}
-	  }
+	  }*/
 		
 	 /* stage('Inspection Code') {
 		container('maven') {
