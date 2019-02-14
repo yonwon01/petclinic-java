@@ -82,7 +82,7 @@ podTemplate(label: label,
 							  usernameVariable: 'DOCKER_HUB_USER',
 							  passwordVariable: 'DOCKER_HUB_PASSWORD']]) {
 			  
-			  sh "kubectl apply -n ${namespace} -f ../deployment/"
+			  sh "kubectl apply -n ${namespace} -f ./deployment/"
 			  sh "sleep 5"
 			  //sh "kubectl apply -n ${namespace} -f ${service}"
 		  }
