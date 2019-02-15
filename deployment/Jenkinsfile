@@ -64,7 +64,7 @@ podTemplate(label: label,
 			 sh "docker build ./spring-petclinic-customers-service/ -t ${image2}"
 			 sh "docker build ./spring-petclinic-visits-service/ -t ${image3}"
 			 sh "docker build ./spring-petclinic-vets-service/ -t ${image4}"
-			 sh "docker login -u yonwon01 -p Chlchdl1!"
+			// sh "docker login -u yonwon01 -p Chlchdl1!"
 			 sh "docker push ${image1}:${tag}"
 			 sh "docker push ${image2}:${tag}"
 			 sh "docker push ${image3}:${tag}"
