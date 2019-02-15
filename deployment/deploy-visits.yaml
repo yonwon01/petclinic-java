@@ -14,7 +14,7 @@ spec:
         tier: visits
     spec:
       containers:
-        - image: mycluster.icp:8500/spring-petclinic-visits-service:latest
+        - image: mycluster.icp:8500/devops/spring-petclinic-visits-service:latest
           imagePullPolicy: Always
           name: visits
           ports:
