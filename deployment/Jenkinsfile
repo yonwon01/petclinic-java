@@ -49,13 +49,14 @@ podTemplate(label: label,
 		}
 	  }*/
 		
-	 /* stage('Inspection Code') {
+	  stage('Inspection Code') {
 		container('maven') {
 			sh "mvn sonar:sonar \
-  -Dsonar.host.url=http://169.56.74.7:32090 \
-  -Dsonar.login=da97e0439d7b6a3834fb0d3a295c1b84630a369f"
+             -Dsonar.projectKey=devops \
+             -Dsonar.host.url=http://10.10.80.16:30777 \
+             -Dsonar.login=c4616ea3fd378dba5e377341e17db7cca230fcaa"
 		}
-	  }*/
+	  }
 	  
 	  stage('Build Docker image') {
 		container('docker') {
